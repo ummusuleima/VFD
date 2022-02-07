@@ -341,29 +341,45 @@
                            </select>
                             </div>
   
-                            <div class="col-2" id="basics" style="display: none;">
+                            <div class="col-6" id="basics" style="display: none;">
                                 <label for="company-column">Discount</label>
                                 <input class="form-control" type="text" name="text" placeholder="1234">
                             </div>
   
-                            <div class="col-2" id="standards" style="display: none;">
+                            <div class="col-6" id="standards" style="display: none;">
                                 <label for="company-column">Discount</label>
                                 <input class="form-control" type="text" name="text" placeholder="1234">
                             </div>
   
-                            <div class="col-2" id="premiums" style="display: none;">
+                            <div class="col-6" id="premiums" style="display: none;">
                                 <label for="company-column">Discount</label>
                                 <input class="form-control" type="text" name="text" placeholder="1234">
                               
                             </div>
-  
-                             
+                          </div>
+                          <div class="row">
                             <div class="col-6">
-                              <label class="col-form-label pt-0" for="role">Copy of ID</label>
+                              <label class="col-form-label pt-0" for="role">Document TinNumber</label>
                              <input class="form-control" type="file">
                           </div>
-                     
+                          <div class="col-6">
+                            <label class="col-form-label pt-0" for="role">Business License</label>
+                           <input class="form-control" type="file">
+                        </div>
+                      </div>
+
+                        <div class="row">
+                        <div class="col-6">
+                          <label class="col-form-label pt-0" for="role">Customer Information</label>
+                         <input class="form-control" type="file">
+                      </div>
+                      <div class="col-6">
+                        <label class="col-form-label pt-0" for="role">Customer ID</label>
+                       <input class="form-control" type="file">
+                    </div>
                           </div>
+                     
+                         
                             
                           </form>
                             </div>
@@ -692,17 +708,17 @@
 
         console.log(valueSelected);
 
-        if (valueSelected == "basic") {
+        if (valueSelected == "Basic") {
           $("#basics").show();
           $("#standards").hide();
           $("#premiums").hide();
        
-        } else if (valueSelected == "standard"){
+        } else if (valueSelected == "Standard"){
          $("#standards").show();
          $("#basics").hide();
          $("#premiums").hide();
 
-        }else if (valueSelected == "premium"){
+        }else if (valueSelected == "Premium"){
           $("# premiums").show();
          $("# basics").hide();
          $("#standards").hide();
